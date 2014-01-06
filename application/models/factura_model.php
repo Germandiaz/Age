@@ -33,10 +33,10 @@ class factura_model{
         $a = $a + 4;
         }
      }else{
-         $pconcepto = $datos['concepto1'];
+        /* $pconcepto = $datos['concepto1'];
          $sconcepto = $datos['concepto2'];
          $tconcepto = $datos['concepto3'];
-         $cconcepto = $datos['concepto4'];
+         $cconcepto = $datos['concepto4']; */
         $sqlfactconcep = ("INSERT INTO TBFACTURASXTBCONCEPTOFACTURAS (TBCONCEPTOFACTURA_ID,TBFACTURA_NUMERO,CANTIDAD,VALOR,CONCEPTO) VALUES(".$cconcepto.",".$resulnumerofact.",".$pconcepto.",".$tconcepto.",'".$sconcepto."');");
         $resultadoconcepto = mysql_query($sqlfactconcep, $cnx);
      }   
