@@ -10,6 +10,8 @@
     	<link rel="stylesheet" href="<?php echo base_url(); ?>css/jquery-ui-1.8.17.custom.css" type="text/css" media="screen" />
     	<!-- Librerias necesarias de cargar en el header para la implementación del autocompletar -->
     	<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui-1.8.17.custom.min.js"></script> 
+        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui-1.8.17.custom.min.js"></script>
+        <!-- esta librería se debe cargar en este lugar ya que en el pie de página genera conflicto -->
+        <script type="text/javascript" src="<?php echo base_url(); ?>js/script.js"></script>
     </head>
     <body>
