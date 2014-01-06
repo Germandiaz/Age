@@ -275,7 +275,7 @@
                               sumavalortotal = sumavalortotal + resultado;
                             }else{
                                 sumavalortotal;
-                              sumavalortotal = '<div class ="estilomensajeerror">Error, Uno de los valores ingresados en las columnas Cantidad o Valor Unitario no son númericos</div>';
+                              sumavalortotal = '<div class ="estilomensajeerror">Error, Uno de los valores ingresados en las columnas Cantidad o Valor Unitario no son numéricos</div>';
                             }
                             i = i + 4;
                         });
