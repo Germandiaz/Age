@@ -1,18 +1,4 @@
-<div class="cleared"></div>
-</div>
-<div class="art-layout-cell art-content">
-    <div class="art-post">
-        <div class="art-post-tl"></div>
-        <div class="art-post-tr"></div>
-        <div class="art-post-bl"></div>
-        <div class="art-post-br"></div>
-        <div class="art-post-tc"></div>
-        <div class="art-post-bc"></div>
-        <div class="art-post-cl"></div>
-        <div class="art-post-cr"></div>
-        <div class="art-post-cc"></div>
-        <div class="art-post-body">
-             <script type="text/javascript">
+           <script type="text/javascript">
                  $(document).ready(function(){
                      
                      
@@ -47,7 +33,7 @@
                                 required: "Campo obligatorio", maxlength: "Máximo se permiten 50 caracteres"
                             }                             
                         },
-                        submitHandler: function(){
+                        submitHandler: function(){                      
                            var fil=document.getElementById("tab").rows.length;
                            var result = (fil - 2) * 4 ;
                            var datos;
@@ -61,17 +47,14 @@
                             datos += '&idusuarioelabora='+ $('#divocultoidelabora').text();
 
                             $.post('ajax/ajaxfactura_insert.php', datos , function(respuesta){
-                                 $('#divfactura').load(nuevafactura/nrofactura);
+                                 $('#divfactura').load('nuevafactura/nrofactura');
                                  $('#mensajeinsert').html(respuesta);
-                            });
-               
-                        }
+                            });     
+                        } 
                 });
     });
   </script>
               
-            <div class="art-post-inner art-article">
-                <div class="art-postcontent">
                     <div>  <?php 
                     $atributos = array('id' => 'factura_form', 'class' => 'form_factura');
                     echo form_open('', $atributos);
@@ -183,7 +166,7 @@
                                 <td colspan="2"></td>
                             </tr>
                     </table>
-                  </div>
+               </div>
               <div class="tablas_linea">
                     <table id="tab">
                             
@@ -305,15 +288,5 @@
                   
               </div>
                   <?php echo form_close(); ?>
-                    <p><br /></p>
-                </div>
-                <div class="cleared"></div>
-            </div>
-            <div class="cleared"></div>
-        </div>
-    </div>
-    <div class="cleared"></div>
-</div>
-</div>
-</div>
+           
 
