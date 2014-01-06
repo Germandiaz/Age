@@ -6,7 +6,8 @@
 	<p>Desarrollado por: <a href="http://canitasdoradas.com/">@jessecogollo</a></p>
 </div>
 <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
+    <!-- Esta librería no debe estar en el header ya que debe cargar antes que el DOM de lo contrario no funciona
+    <script src="js/jquery.js"></script> -->
     <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
